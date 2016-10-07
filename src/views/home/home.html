@@ -1,0 +1,20 @@
+<div>
+    <h1 class="main-title">Rendimiento de clubes de Costa Rica en CCL</h1>
+    <div id="interactive-dashbaord"></div>
+  
+    <div class="chart-row">
+        <div id="opponent-games" ng-if="opponentDataSource">
+            <fusioncharts width="100%" height="400" type="column2d" datasource="{{ opponentDataSource }}"></fusioncharts>
+        </div>
+    </div>
+  
+    <div class="chart-row">  
+        <div id="club-performance" class="inline-chart" ng-if="performanceDataSource">
+            <fusioncharts width="100%" height="350" type="doughnut2d" datasource="{{ performanceDataSource }}"></fusioncharts>
+        </div>
+        
+        <div id="season-games" class="inline-chart" ng-if="seasonDataSource">
+            <fusioncharts width="100%" height="350" type="spline" datasource="{{ seasonDataSource }}"></fusioncharts>
+        </div>
+    </div>
+</div>

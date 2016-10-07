@@ -1,0 +1,10 @@
+{
+  "name": "cgs",
+  "version": "1.0.0",
+  "description": "CCL Google Spreadsheet",
+  "author": {
+    "name": "Moises Brenes"
+  },
+  "main": "index.html",
+  "license": "BSD-2-Clause"
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CCL Google Spreadsheet</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- build:css assets/css/styles.css -->
+    <link rel="stylesheet" href="assets/css/fonts.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!-- endbuild -->
+</head>
+<body data-ng-app="app">
+    <header></header>
+    
+    <section id="main">
+        <div class="container">
+            <ng-view></ng-view>
+        </div>
+    </section>
+    
+    <footer></footer>
+
+    <!-- build:assets assets.min.js -->
+    <!-- Assets -->
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular.route.min.js"></script>
+        <script src="assets/js/underscore.min.js"></script>
+        <script src="assets/js/fusioncharts.js"></script>
+        <script src="assets/js/fusioncharts.charts.js"></script>
+        <script src="assets/js/fusioncharts.powercharts.js"></script>
+        <script src="assets/js/fusioncharts.theme.carbon.js"></script>
+        <script src="assets/js/angular.fusioncharts.min.js"></script>
+    <!-- / -->
+    <!-- endbuild -->
+    
+    <!-- build:js app.min.js -->
+    <!-- Modules -->
+        <script src="app.routes.js"></script>
+        <script src="app.config.js"></script>
+        <script src="app.core.js"></script>
+        <script src="app.js"></script>
+    <!-- / -->
+    <!-- Services -->
+        <script src="services/core/page.value.js"></script>
+        <script src="services/core/api.constant.js"></script>
+        <script src="services/match/match.constant.js"></script>
+        <script src="services/match/chart.value.js"></script>
+        <script src="services/match/match.service.js"></script>
+    <!-- / -->
+    <!-- Controllers -->
+        <script src="controllers/home/home.controller.js"></script>
+    <!-- / -->
+    <!-- Directives -->
+        <script src="directives/core/page.directive.js"></script>
+        <script src="directives/match/chart.directive.js"></script>
+    <!-- / -->
+    <!-- Filters -->
+        <script src="filters/match/match.filter.js"></script>
+    <!-- / -->
+    <!-- endbuild -->
+</body>
+</html>
